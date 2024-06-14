@@ -1,9 +1,10 @@
+
 .header{
     display:flex;
     justify-content:space-between;
     position: fixed;
     top: 0;
-    background-color:pink ;
+    background-image: linear-gradient(0,rgb(255, 173, 186),rgb(143, 208, 216));
     z-index: 99;
 }
 .logo{
@@ -13,6 +14,11 @@
 /* độ to của logo trong khung */
 .logo img{
     width:100%;
+}
+.logo img:hover{
+    box-shadow: 0px 4px 8px rgb(123, 97, 97);
+    border-radius: 50px;
+    
 }
 /* chỉnh khoảng cách viền xanh đến chữ */
 .mid-header{
@@ -38,22 +44,23 @@
 }
 .search-header{
     margin-right: 20px;
+
 }
 .search-header input{
     /* border chỉnh mất khung viền */
     border:none;
     /* background màu nền trong khung*/
-    background: #f5f5f5; 
+    background:#000000;
     /* màu chữ */
-    color: #707072;
+    color: pink;
     /* làm tròn viền khung */
     border-radius: 50px;
     /*khoảng cách trong hộp  */
-    padding: 8px;
+    padding: 10px;
     /* chiều rộng của khung */
     width: 140px;
     font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 .last-header-2{
     margin-top: 10px;
@@ -74,15 +81,18 @@
 }
 .footer-des{
     display: flex ;
+   
 }
 .footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
     padding: 0 65px;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family:  sans-serif;
+    background-color: pink;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 50px;
     
 }
 .footer-des-1{
@@ -97,6 +107,7 @@
 }
 .footer-vietnam{
     font-family:  sans-serif;
+    transition: 0.5s;
 
 }
 .footer-vietnam a{
@@ -104,15 +115,20 @@
     color: #707072;
 }
 .footer-vietnam a:hover{
-    color:#111111
+    color:rgb(11, 10, 10);
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgb(123, 97, 97);
+    padding:8px;
 }
 .des-1-1{
     margin-bottom: 40px;
 }
+
 .last-footer{
     display: flex;
     padding: 0 65px;
-    margin-top: 15px;
+    margin-top: -10px;
+ 
     
 }
 .last-1{
@@ -127,25 +143,28 @@
     font-family: sans-serif;
 }
 .last-footer a:hover{
-    color: black;
+    color: pink;
 }
 .body-shop{
     display: flex;
-    margin-top: 170px; 
+    margin-top: 130px; 
     flex-wrap:wrap;
     justify-content: space-around;
     gap: 14px;
-
+    background-color: #ffffff;
+    
 }
 .shop-1 {
-    background-color:rgb(184, 131, 131);
+    
     width: 300px;
-    padding:15px 20px; 
+    padding:15px 18px; 
     border-radius: 20px;
-    box-shadow: 2px 4px 8px rgb(123, 97, 97);
-    transition: transform 0.3s;}
+    box-shadow:2px 4px 8px rgb(0, 0, 0);
+    background-image: linear-gradient(0,rgb(143, 208, 216),rgb(255, 173, 186));
+    transition: transform 0.4s;
+}
 .shop-1:hover{
-    transform:translateY(-15px);
+    transform:translateY(-13px);
 }    
 
 .shop-img{
@@ -166,20 +185,22 @@
 .shop-des a{
     font-family: sans-serif;
     text-decoration: none;
-    color: #e9dcdc;
+    color: #141414;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 .shop-des a:first-child{
     font-family:sans-serif;
     font-weight: bold;
-    color: rgb(14, 13, 13);
+    color: rgb(24, 24, 24);
 }
 .shop-des a:first-child:hover{
-    color:rgb(223, 219, 219)
+    color:rgb(255, 255, 255)
 }
 .price-tag a{
     font-family:sans-serif;
     font-weight: bold;
-    color: black;
+    color: rgb(28, 27, 27);
 }
 /* do dai cac dong */
 .shop-des p{

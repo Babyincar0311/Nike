@@ -6,7 +6,8 @@ body{
     justify-content:space-between;
     background-image: linear-gradient(0,rgb(255, 173, 186),rgb(143, 208, 216));
     position: fixed;
-    top 0 ;
+    top: 0 ;
+    z-index: 999;
 }
 .logo{
     /* giới hạn độ to của khung hình chứa logo */
@@ -68,72 +69,6 @@ body{
     color:#111111;
 
 }
-.body-web{
-    /* block để theo hàng dọc */
-    display: block;
-    background:#7a7272;
-    border-radius: 50px;
-}
-.body-web-img{
-    width: 100%;
-   
-}
-.body-web-img img{
-    width:93%;
-    margin-left: 50px;
-    margin-top: 140px;
-    border-radius: 50px;
-    
-}
-.body-web-des{
-    /* cho chữ chồng lên nhau */
-    display: grid;
-    /* căn chỉnh chữ ra giữa */
-    text-align:center;
-    font-family:Arial, Helvetica, sans-serif ;
-    margin-top: 40px;
-    line-height: 30px;
-    color:pink;
-}
-.des-1{
-    font-size: large;
-    font-weight: bold;
-}
-.des-2{
-    font-family: sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-.des-3{
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-.button-des{
-    margin-left: 635px;
-    border-radius: 50px;
-    padding: 10px 50px;
-    background-image: linear-gradient(0,rgb(255, 173, 186),rgb(143, 208, 216));
-    color: rgb(41, 39, 39);
-    font-weight:bold;
-    font-size: large;
-    font-family:'Courier New', Courier, monospace;
-    /* hiện bàn tay khi chỉ vào */
-    cursor: pointer;
-    transition: 0,3s;
-    margin-bottom: 20px;
-    border: none;
-}
-/* chỉnh màu khi đưa chuột vào */
-.button-des:hover{
-    opacity :inherit ;
-    transition-duration: 0.3s;
-    background-image: linear-gradient(0,rgb(143, 208, 216),rgb(255, 173, 186));
-    color:#111111   ;
-    box-shadow: 0px 4px 8px rgb(29, 29, 29)
-}
 .footer-web{
     display: flex;
     justify-content: space-between;
@@ -154,7 +89,7 @@ body{
 .footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 100px;
     padding: 0 65px;
     color: rgb(37, 39, 39);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -220,7 +155,114 @@ body{
 .sp-icon{
     margin-top: 70px;
     color:#121212;
-    font-size: 70px;
+    font-size: 70px;  
+}
+.container{
+    display: flex;
+}
+
+.body-product{
+    display: flex;
+    margin: 150px 20px;
+  
+    
+}
+.product-img{
+    display: flex;
+    margin-left: 250px;
+    
+}
+.product-img-small{
+    width: 10%;
+}
+.product-img-small img{
+    width: 100%;
+    border-radius: 9px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.product-img-small img:hover{
+    box-shadow:0px 4px 8px  rgb(26, 17, 17);
+}
+.product-img-big{
+    width: 50%;
+}
+.product-img-big img{
+    width: 81.4%;
+    border-radius: 9px;
+    margin-left: 20px;
+}
+.product-text{
+   position: relative;
+   right: 300px;
+   z-index: 0;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+}
+.product-title{
+    width: 200px;
+    line-height: 10px;
+}
+.product-title span{
+   font-size: 30px;
+}
+.product-title p{
+    color: rgb(63, 66, 66);
+}
+.product-price-2{
+    margin-bottom: 40px;
+    margin-top: -5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.product-size span{
+    font-weight: bold;
+    font-size: 15px;
+}
+.product-select-size {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap:5px;
    
    
 }
+.product-select-size button{
+    padding: 9px 50px;
+     background-image: linear-gradient(0,pink,rgb(93, 229, 241)); 
+    border: 3px solid rgb(98, 93, 93);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button-1 button{
+    padding: 17px 100px;
+    margin-left: 6px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(0, 0, 0);
+    transition: 0.5s;
+    color: aliceblue;
+    font-weight: bold;
+}
+.button-1 button:hover{
+    background-color: rgb(255, 255, 255);
+    color: #111111;
+}
+.button-2 button{
+    padding: 17px 112.5px;
+    margin-left: 6px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(253, 250, 250);
+    transition: 0.5s;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.button-2 button:hover{
+    background-color: rgb(6, 6, 6);
+    color: rgb(255, 255, 255);
+}
+    
